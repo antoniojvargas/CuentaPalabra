@@ -1,0 +1,61 @@
+﻿@model IEnumerable<CuentaPalabra.Models.Palabra>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+@{
+    Html.RenderPartial("_BarraAnalizar", (List<CuentaPalabra.ViewModels.Entradas>)ViewBag.Entradas);
+}
+<div class="row">
+    <div class="w3-bar w3-light-grey">
+        <button class="w3-bar-item w3-button" onclick="openTab('Datos')">Datos</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Grafico')">Gráfico</button>
+    </div>
+    <div id="Datos" class="w3-container myTab">
+        <div class="col-md-6">
+            @{
+                <div class="table-responsive" lang="en-US">
+                    <table class="table table-bordered" id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>Palabra</th>
+                                <th>Conteo</th>
+                                <th>% de uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                if (Model != null)
+                                {
+                                    foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@Html.DisplayFor(modelItem => item.NomPalabra)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.Conteo)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.PorcUso)</td>
+                                        </tr>
+                                    }
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+
+
+    <div id="Grafico" class="w3-container myTab" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+</div>
+
+<script>
+    function openTab(tabName) {
+        var i;
+        var x = document.getElementsByClassName("myTab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+    }
+</script>	

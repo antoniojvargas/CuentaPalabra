@@ -1,0 +1,44 @@
+﻿@model IEnumerable<CuentaPalabra.ViewModels.Entradas>
+
+<div class="row">
+    @using (Html.BeginForm("Analizar", "Entradas", FormMethod.Post))
+    {
+        <div class="col-md-12" style="margin-top: 15px; background-color: #D3D3D3; padding-top: 10px; padding-bottom: 10px; ">
+            <div class="form-group">
+                <div class="col-md-2">
+                    @Html.Label("Entrada", htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-4">
+                    @{
+                        List<SelectListItem> entradasItems = new List<SelectListItem>();
+                        if (Model != null)
+                        {
+                            foreach (var itemEntrada in Model)
+                            {
+                                var unItem = new SelectListItem();
+                                unItem.Text = itemEntrada.Titulo;
+                                unItem.Value = itemEntrada.Id.ToString();
+                                entradasItems.Add(unItem);
+                            }
+                        }
+                    }
+
+                    @Html.DropDownList("listEntradas", entradasItems, htmlAttributes: new { @class = "form-control", id = "listEntradas", name = "listEntradas" })
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" value="Create" class="btn btn-primary btn-block">Analizar</button>
+                </div>
+                <div class="col-md-2">
+                    <a href="@Url.Action("Exportar", "Entradas")" class="btn btn-primary btn-block">
+                        Exportar
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="@Url.Action("Archivo", "Entradas")" class="btn btn-primary btn-block">
+                        Archivo
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

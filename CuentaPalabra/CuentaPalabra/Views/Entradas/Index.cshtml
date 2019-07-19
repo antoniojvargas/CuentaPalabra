@@ -1,0 +1,10 @@
+﻿@model IEnumerable<CuentaPalabra.ViewModels.Entradas>
+@{
+    ViewBag.Title = "Contar palabras";
+}
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+@{    
+    Html.RenderPartial("_BarraAnalizar", (List<CuentaPalabra.ViewModels.Entradas>)ViewBag.Entradas);
+}
