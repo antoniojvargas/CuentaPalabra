@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cuentapalabra",
+  "private_key_id": "1227df24dd34569fa25bdff38b6557c22fce8ad2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDXTrOhBaZGk5fg\nbE7ydhcOI846K2QxWmHooQYwToV4FekDu5bcWXBj4UXe/ThnSEv5821TAAEUYQCk\nOM6JBjMkrckooARcPPn5sSld1AuclhqQbJxIMv7hINRgtRGHQXWuDr5UX+qNjnnN\n0xUDvfD1mDD57KbLUBrWdAuFS/ZR+c0wN1Oy3a4u9w37HzM+wLPTnULc5F0MOKa5\nRsGZ54uQy09oMJ73OehbeyO51tImNQyFL023RCk+QSR7fH9Z+vtncj5R5tteFRPd\nHJs/SEKmllhvamwvdLhoNmcy25kyPFEdNQZ7JCO8u/Gd/gTVjPDbyHNr0+RN6/np\nnDdrWlktAgMBAAECggEAAwGLSn08tBGNdkms1H/HlJ/1WiSO8o1zfn75CiWegW20\n4iN1WMA67HoRsqpQZkjBHs1CQn1mhnVQP/q3D3yxrBptC48oYG1NhCnwDOpP+zCx\nUEDj8bIckuIVdQAyLXRBg1ubVqw8JxvNIY2H5pR5T8R/Mo4WShJlPYdDPeowlzZi\nDjBFoKY5U7jBEKO5a4j8dbxIbNUCQ08e9zUeDnZE4GVaHizVsQRJZkXarcn/yanL\nn7am5SON3Q6FVc/k7d6dn6oshDj1gWJ7tVUVE85bxiKFYY2n4HOX49FL0Fk9kj8p\nFuY1bdh1J1eaxwgyInxXPGsO0Cm1zFSOkP5YRZjwdQKBgQD+qUt4JMmLGZFCXthw\nSSMSBaMpbhyEhQQtbK4v8VM7WDAgcCovm91uKslpIolJKjjyFLowOpUh3w8TM7ai\n9uweovbSFhXeP8xFRo6rnZquTRRrD7njgFFMUAjA034oJJEBjt5TBEb0ape2SQL2\nTjqn3mYgJVVAFLwliXvr0t2y9wKBgQDYcHJ75Er7Fw25UIO8u068LpLQqEtRBmXr\nFA6QGPXcw9+WD4o/1ele5RUQlW86Li6p0ySlzJNUa62fCVFDsT6RJecWgnfQiXGh\nCQsp23iJ3BU6Svm3YKsFTLmkyxDNzfQ9Wn7lz05/HVSZuE+BDF1GQmhqb3nlZrEe\nFXMJTbnn+wKBgQCYPIh7ODKrzwsBTEXDSlWGzovtln/B0OrgZNn0myWQknWizqrJ\nbzn+Q+HH0feUH4OPZEix0DOa3gfbCM0jus0Iu48lpEJKbIUm3LkparwverC8F9ie\nYfU305iH/WarhMCS19+cbTAlqRssw5TbvYRfGhqfGPJPrpWTMw87uQEDnQKBgDLA\n65exyQNoPIegIcQ4CBaItVTIoiC152Bgq6mOsNi79coyirC9cKQYBACHijWSbs7T\n/FwExOee+G+6t5uwDIPs52uX3JDCKisg+8Us+e8Z9MBepIAj4vazLzU9iQs5qHRa\nrDcnjbixIA2L8tjIFXdMSz/qNCNfGVl8niUoXNfRAoGBAOClwvA5/5lsrcPgcFBb\nvmWRtHKPWEVKviCNwK7M3SN8cvItL9546i+sfm7fza9VtTTYFXtl7hppQys7Sag7\nf1m5lAd2M9Ph0P3Ok9I05Haymu9UuUoyYwpu5hZQnThUJBKXlmCWUvMjiIZ77yar\nMq7Dl/mNx9L7AYxeu132hdS+\n-----END PRIVATE KEY-----\n",
+  "client_email": "cuentapalabra@cuentapalabra.iam.gserviceaccount.com",
+  "client_id": "107997760654180854463",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cuentapalabra%40cuentapalabra.iam.gserviceaccount.com"
+}

@@ -12,5 +12,7 @@ namespace CuentaPalabra.Models
         public int Conteo { get; set; }
 
         public string PorcUso { get; set; }
+
+        public string Traduccion { get; set; }
     }
 }

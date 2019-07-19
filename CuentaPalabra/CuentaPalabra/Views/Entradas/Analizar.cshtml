@@ -1,9 +1,9 @@
 ﻿@model IEnumerable<CuentaPalabra.Models.Palabra>
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-@{
-    Html.RenderPartial("_BarraAnalizar", (List<CuentaPalabra.ViewModels.Entradas>)ViewBag.Entradas);
-}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js">
+
+      @{ Html.RenderPartial("_BarraAnalizar", (List<CuentaPalabra.ViewModels.Entradas>)ViewBag.Entradas); }
 <div class="row">
     <div class="w3-bar w3-light-grey">
         <button class="w3-bar-item w3-button" onclick="openTab('Datos')">Datos</button>
@@ -44,8 +44,7 @@
 
 
     <div id="Grafico" class="w3-container myTab" style="display:none">
-        <h2>Paris</h2>
-        <p>Paris is the capital of France.</p>
+        <canvas id="myChart" width="400" height="400"></canvas>
     </div>
 </div>
 

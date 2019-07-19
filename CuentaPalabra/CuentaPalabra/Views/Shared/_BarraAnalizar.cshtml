@@ -18,6 +18,7 @@
                                 var unItem = new SelectListItem();
                                 unItem.Text = itemEntrada.Titulo;
                                 unItem.Value = itemEntrada.Id.ToString();
+
                                 entradasItems.Add(unItem);
                             }
                         }
@@ -26,12 +27,13 @@
                     @Html.DropDownList("listEntradas", entradasItems, htmlAttributes: new { @class = "form-control", id = "listEntradas", name = "listEntradas" })
                 </div>
                 <div class="col-md-2">
-                    <button type="submit" value="Create" class="btn btn-primary btn-block">Analizar</button>
+                    <button type="submit" value="Analizar" class="btn btn-primary btn-block" name="boton">Analizar</button>
                 </div>
                 <div class="col-md-2">
-                    <a href="@Url.Action("Exportar", "Entradas")" class="btn btn-primary btn-block">
+                    @*<a href="@Url.Action("Exportar", "Entradas")" class="btn btn-primary btn-block">
                         Exportar
-                    </a>
+                    </a>*@
+                    <button type="submit" value="Exportar" class="btn btn-primary btn-block" name="boton">Exportar</button>
                 </div>
                 <div class="col-md-2">
                     <a href="@Url.Action("Archivo", "Entradas")" class="btn btn-primary btn-block">
